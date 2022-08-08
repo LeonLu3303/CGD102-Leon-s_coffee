@@ -1,0 +1,208 @@
+.hp_01_video {
+  top: 0px;
+  position: fixed;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.7;
+  max-height: 800px;
+}
+
+.homepage_01 {
+  position: relative;
+  z-index: 3;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+}
+
+.hp_01_content h2 {
+  padding: 40px 0;
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 5px;
+}
+.hp_01_content p {
+  letter-spacing: 2px;
+  border-radius: 10px;
+  background: rgba(50, 42, 40, 0.4235294118);
+  padding: 30px 30px;
+  font-size: 16px;
+  text-align: center;
+}
+.hp_01_content p a {
+  width: 160px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: #ffdda1;
+  color: #322a28;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 60px auto 0;
+}
+
+.homepage_02 {
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  background-color: #322a28;
+  padding: 80px 0px;
+}
+
+.hp_02_title {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.hp_02_title h2 {
+  font-size: 36px;
+  letter-spacing: 4px;
+}
+
+.hp_02_location_card {
+  padding: 60px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.hp_02_location_card .location_pic {
+  margin: 0 auto;
+  width: 240px;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.hp_02_location_card .location_pic img {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  opacity: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scale(1);
+  transition: all 0.3s 0.2s ease-in-out;
+}
+.hp_02_location_card .location_pic h3 {
+  font-size: 28px;
+  position: absolute;
+  width: 240px;
+  height: 50px;
+  background-color: #ffdda1;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 95px;
+  color: #322a28;
+  transition: all 0.3s ease-in-out;
+}
+.hp_02_location_card .aisa_location {
+  width: 100%;
+  flex-grow: 1;
+  padding: 40px 0px 0px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 80px;
+}
+.hp_02_location_card .aisa_location p {
+  padding: 10px;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .homepage_01 {
+    height: 60vh;
+  }
+  .hp_01_content h2 {
+    padding: 0 0 40px 0;
+    font-size: 42px;
+    text-shadow: 0px 3px 6px #322a28;
+  }
+  .hp_01_content p {
+    font-size: 24px;
+    background-color: rgba(50, 42, 40, 0.2784313725);
+    color: #d8c2a7;
+  }
+  .hp_01_content p a {
+    width: 180px;
+    height: 60px;
+    font-size: 28px;
+    margin: 100px auto 0;
+  }
+  .hp_02_location_card {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .homepage_01 {
+    height: 65vh;
+  }
+  .hp_01_content p a {
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+    text-shadow: none;
+  }
+  .hp_01_content p a:before {
+    content: "Get start";
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #704d10;
+    color: #d8c2a7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(5);
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  .hp_01_content p a:hover:before {
+    transform: scale(1);
+    opacity: 1;
+    transition: all 0.5s;
+  }
+  .hp_02_title h2 {
+    font-size: 42px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hp_01_content h2 {
+    font-size: 52px;
+  }
+  .hp_01_content p {
+    background-color: transparent;
+    font-size: 28px;
+    text-shadow: 0px 3px 6px #322a28;
+  }
+  .hp_01_content p a {
+    width: 260px;
+    height: 80px;
+    font-size: 32px;
+  }
+  .hp_02_title h2 {
+    font-size: 52px;
+  }
+  .hp_02_location_card {
+    width: 25%;
+  }
+  .hp_02_location_card .location_pic:hover img {
+    transform: scale(1.3);
+    transition: all 0.3s ease;
+  }
+  .hp_02_location_card .location_pic:hover h3 {
+    top: 0;
+    height: 240px;
+    background-color: rgba(255, 220, 161, 0.7294117647);
+    transition: background-color 0.3s 0.2s ease, height 0.3s 0.2s ease, top 0.3s 0.2s ease;
+  }
+}/*# sourceMappingURL=style.css.map */
