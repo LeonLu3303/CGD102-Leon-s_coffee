@@ -52,6 +52,9 @@
   z-index: 3;
   background-color: #322a28;
   padding: 80px 0px;
+  .desktop_show {
+    display: none;
+  }
 }
 .hp_02_title {
   text-align: center;
@@ -106,7 +109,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 80px;
+    height: 180px;
     p {
       padding: 10px;
       font-size: 24px;
@@ -144,6 +147,7 @@
     width: 50%;
   }
   // ======== hp_02 end=========
+  // ====== map ======
 }
 @media screen and (min-width: 1024px) {
   .homepage_01 {
@@ -187,6 +191,224 @@
     }
   }
   // ======== hp_01 end=========
+  // ======== hp_02 start ======
+
+  .phone_show {
+    display: none;
+  }
+  .homepage_02 {
+    .desktop_show {
+      display: block;
+    }
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px 0 20px;
+    .hp_02_map_name {
+      text-align: center;
+      h3 {
+        font-size: 28px;
+        letter-spacing: 2px;
+      }
+      ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 10px;
+      }
+      li {
+        color: #d8c2a7;
+        margin: 10px;
+        font-size: 20px;
+        padding: 5px 12px;
+        background-color: #8c5819;
+        border-radius: 15px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transform: scale(1);
+        transition: transform 0.3s, color 0.3s, background-color 0.3s;
+      }
+      li:hover {
+        background-color: #ffdda1;
+        color: #8c5819;
+        transform: scale(1.3);
+        transition: transform 0.3s;
+      }
+    }
+  }
+
+  .hp_02_map_con {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 600px;
+    background-image: url(../../sourse/map_version_04.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    .hp_02_map_item {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      overflow: hidden;
+      cursor: pointer;
+      border-radius: 50%;
+      background-color: #d59446;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .item_pic {
+        width: 100%;
+        img {
+          width: 100%;
+          vertical-align: top;
+        }
+      }
+    }
+    .open {
+      width: 240px;
+      height: 400px;
+      border-radius: 10px;
+      z-index: 10;
+    }
+    .item_card {
+      opacity: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      .card_content {
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        .item_title {
+          text-align: center;
+          font-size: 22px;
+          color: #322a28;
+          font-weight: 600;
+          margin-bottom: 10px;
+        }
+        .item_content {
+          flex-grow: 1;
+          p {
+            text-align: center;
+            color: #322a28;
+            font-weight: 600;
+
+            span {
+              display: block;
+              margin: 10px 0;
+              color: #704d10;
+              font-size: 14px;
+            }
+          }
+        }
+        a {
+          align-self: flex-end;
+          font-size: 20px;
+          margin: 10px;
+          padding: 5px 15px;
+          color: #704d10;
+          font-weight: 600;
+          cursor: pointer;
+          border-radius: 6px;
+          border: 1px solid #704d10;
+          position: relative;
+          overflow: hidden;
+        }
+        a::before {
+          content: 'see more';
+          color: #ffdda1;
+          text-align: center;
+          line-height: 30px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #704d10;
+          transform-origin: bottom left;
+          transform: rotate(-90deg);
+          transition: transform 0.5s;
+        }
+        a:hover::before {
+          transform-origin: bottom left;
+          transform: rotate(0deg);
+          transition: transform 0.5s;
+        }
+      }
+    }
+    #panama {
+      left: 27.5%;
+      bottom: 32.5%;
+    }
+    #guatemala {
+      left: 24.5%;
+      bottom: 35%;
+    }
+    #honduras {
+      left: 26%;
+      bottom: 34.5%;
+    }
+    #costa {
+      left: 26%;
+      bottom: 32.5%;
+    }
+    #colombia {
+      left: 30%;
+      bottom: 31.5%;
+    }
+    #brazil {
+      left: 36%;
+      bottom: 26.5%;
+    }
+    #peru {
+      left: 29%;
+      bottom: 26%;
+    }
+    #ethiopia {
+      left: 57%;
+      bottom: 31.5%;
+    }
+    #kenya {
+      left: 59%;
+      bottom: 26%;
+    }
+    #rwanda {
+      left: 55.5%;
+      bottom: 23%;
+    }
+    #malawi {
+      left: 57%;
+      bottom: 20%;
+    }
+    #tanzania {
+      left: 58%;
+      bottom: 23%;
+    }
+    #philippines {
+      left: 77%;
+      bottom: 29%;
+    }
+    #indonesia {
+      left: 75.5%;
+      bottom: 24%;
+    }
+    #yemen {
+      left: 60.5%;
+      bottom: 33%;
+    }
+    #india {
+      left: 67.5%;
+      bottom: 32%;
+    }
+  }
+  // ========= hp_02 end =======
 }
 @media screen and (min-width: 1200px) {
   .hp_01_content {
@@ -227,6 +449,83 @@
       }
     }
   }
-
   // ======== hp_02 end=========
+}
+@media screen and (min-width: 1445px) {
+  .hp_02_map_con {
+    height: 800px;
+    .hp_02_map_item {
+      width: 12px;
+      height: 12px;
+    }
+    .open {
+      width: 240px;
+      height: 400px;
+      border-radius: 10px;
+    }
+    #panama {
+      left: 27.5%;
+      bottom: 34%;
+    }
+    #guatemala {
+      left: 24.5%;
+      bottom: 37%;
+    }
+    #honduras {
+      left: 26%;
+      bottom: 36%;
+    }
+    #costa {
+      left: 26%;
+      bottom: 34%;
+    }
+    #colombia {
+      left: 30%;
+      bottom: 33%;
+    }
+    #brazil {
+      left: 36%;
+      bottom: 28%;
+    }
+    #peru {
+      left: 28%;
+      bottom: 27%;
+    }
+    #ethiopia {
+      left: 57%;
+      bottom: 33%;
+    }
+    #kenya {
+      left: 59%;
+      bottom: 27%;
+    }
+    #rwanda {
+      left: 55%;
+      bottom: 25%;
+    }
+    #malawi {
+      left: 56.5%;
+      bottom: 22%;
+    }
+    #tanzania {
+      left: 58%;
+      bottom: 24%;
+    }
+    #philippines {
+      left: 77.5%;
+      bottom: 29%;
+    }
+    #indonesia {
+      left: 75.5%;
+      bottom: 24%;
+    }
+    #yemen {
+      left: 60.5%;
+      bottom: 33%;
+    }
+    #india {
+      left: 67.5%;
+      bottom: 32%;
+    }
+  }
 }
