@@ -22,6 +22,7 @@
     text-align: center;
     font-size: 28px;
     letter-spacing: 5px;
+    color: #ffdda1;
   }
   p {
     letter-spacing: 2px;
@@ -51,18 +52,16 @@
   position: relative;
   z-index: 3;
   background-color: #322a28;
-  padding: 80px 0px;
+  padding: 80px 0px 40px 0;
   .desktop_show {
     display: none;
   }
 }
 .hp_02_title {
   text-align: center;
-  padding-bottom: 20px;
-  h2 {
-    font-size: 36px;
-    letter-spacing: 4px;
-  }
+  padding-bottom: 40px;
+  font-size: 36px;
+  letter-spacing: 4px;
 }
 .hp_02_location_card {
   padding: 60px 0;
@@ -117,8 +116,17 @@
     }
   }
 }
-
 // =========== hp_02 end==========
+// ========= hp_03 start =========
+.homepage_03 {
+  width: 100%;
+  h2 {
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 4px;
+  }
+}
+// =========== hp_03 end==========
 
 @media screen and (min-width: 768px) {
   .homepage_01 {

@@ -21,6 +21,7 @@
   text-align: center;
   font-size: 28px;
   letter-spacing: 5px;
+  color: #ffdda1;
 }
 .hp_01_content p {
   letter-spacing: 2px;
@@ -48,7 +49,7 @@
   position: relative;
   z-index: 3;
   background-color: #322a28;
-  padding: 80px 0px;
+  padding: 80px 0px 40px 0;
 }
 .homepage_02 .desktop_show {
   display: none;
@@ -56,9 +57,7 @@
 
 .hp_02_title {
   text-align: center;
-  padding-bottom: 20px;
-}
-.hp_02_title h2 {
+  padding-bottom: 40px;
   font-size: 36px;
   letter-spacing: 4px;
 }
@@ -116,6 +115,15 @@
   padding: 10px;
   font-size: 24px;
   letter-spacing: 2px;
+}
+
+.homepage_03 {
+  width: 100%;
+}
+.homepage_03 h2 {
+  text-align: center;
+  font-size: 36px;
+  letter-spacing: 4px;
 }
 
 @media screen and (min-width: 768px) {
