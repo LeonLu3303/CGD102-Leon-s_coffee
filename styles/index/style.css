@@ -177,6 +177,37 @@
   .hp_02_title h2 {
     font-size: 42px;
   }
+}
+@media screen and (min-width: 1200px) {
+  .hp_01_content h2 {
+    font-size: 52px;
+  }
+  .hp_01_content p {
+    background-color: transparent;
+    font-size: 28px;
+    text-shadow: 0px 3px 6px #322a28;
+  }
+  .hp_01_content p a {
+    width: 260px;
+    height: 80px;
+    font-size: 32px;
+  }
+  .hp_02_title h2 {
+    font-size: 52px;
+  }
+  .hp_02_location_card {
+    width: 25%;
+  }
+  .hp_02_location_card .location_pic:hover img {
+    transform: scale(1.3);
+    transition: all 0.3s ease;
+  }
+  .hp_02_location_card .location_pic:hover h3 {
+    top: 0;
+    height: 240px;
+    background-color: rgba(255, 220, 161, 0.7294117647);
+    transition: background-color 0.3s 0.2s ease, height 0.3s 0.2s ease, top 0.3s 0.2s ease;
+  }
   .phone_show {
     display: none;
   }
@@ -335,7 +366,7 @@
     width: 240px;
     height: 420px;
     border-radius: 10px;
-    background-color: #ffdda1;
+    background-image: radial-gradient(120px 200px at center center, #ffdda1 0%, #ffdda1 100%);
     z-index: 10;
     transition: all 0.3s;
   }
@@ -402,37 +433,6 @@
   .hp_02_map_con #india {
     left: 67.5%;
     bottom: 32%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hp_01_content h2 {
-    font-size: 52px;
-  }
-  .hp_01_content p {
-    background-color: transparent;
-    font-size: 28px;
-    text-shadow: 0px 3px 6px #322a28;
-  }
-  .hp_01_content p a {
-    width: 260px;
-    height: 80px;
-    font-size: 32px;
-  }
-  .hp_02_title h2 {
-    font-size: 52px;
-  }
-  .hp_02_location_card {
-    width: 25%;
-  }
-  .hp_02_location_card .location_pic:hover img {
-    transform: scale(1.3);
-    transition: all 0.3s ease;
-  }
-  .hp_02_location_card .location_pic:hover h3 {
-    top: 0;
-    height: 240px;
-    background-color: rgba(255, 220, 161, 0.7294117647);
-    transition: background-color 0.3s 0.2s ease, height 0.3s 0.2s ease, top 0.3s 0.2s ease;
   }
 }
 @media screen and (min-width: 1445px) {
