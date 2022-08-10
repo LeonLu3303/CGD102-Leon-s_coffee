@@ -214,6 +214,11 @@
     transform: scale(1);
     transition: transform 0.3s, color 0.3s, background-color 0.3s;
   }
+  .flex .hp_02_map_name .checked {
+    background-color: #ffdda1;
+    color: #8c5819;
+    transform: scale(1);
+  }
   .flex .hp_02_map_name li:hover {
     background-color: #ffdda1;
     color: #8c5819;
@@ -234,13 +239,14 @@
     position: absolute;
     width: 8px;
     height: 8px;
-    overflow: hidden;
     cursor: pointer;
+    overflow: hidden;
     border-radius: 50%;
-    background-color: #d59446;
+    background-image: radial-gradient(4px 4px at center center, #d59446 100%, #d59446 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all 0.3s;
   }
   .hp_02_map_con .hp_02_map_item .item_pic {
     width: 100%;
@@ -249,17 +255,17 @@
     width: 100%;
     vertical-align: top;
   }
-  .hp_02_map_con .open {
-    width: 240px;
-    height: 400px;
-    border-radius: 10px;
-    z-index: 10;
+  .hp_02_map_con .highlight {
+    width: 16px;
+    height: 16px;
+    background-image: radial-gradient(8px 8px at center center, #ffdda1 20%, rgba(146, 94, 5, 0.5058823529) 100%);
   }
   .hp_02_map_con .item_card {
     opacity: 0;
     height: 100%;
     display: flex;
     flex-direction: column;
+    transition: all 0.3s;
   }
   .hp_02_map_con .item_card .card_content {
     padding: 10px 10px;
@@ -321,6 +327,17 @@
     transform-origin: bottom left;
     transform: rotate(0deg);
     transition: transform 0.5s;
+  }
+  .hp_02_map_con .isOpacity {
+    opacity: 1;
+  }
+  .hp_02_map_con .open {
+    width: 240px;
+    height: 420px;
+    border-radius: 10px;
+    background-color: #ffdda1;
+    z-index: 10;
+    transition: all 0.3s;
   }
   .hp_02_map_con #panama {
     left: 27.5%;
@@ -426,10 +443,19 @@
     width: 12px;
     height: 12px;
   }
+  .hp_02_map_con .highlight {
+    width: 24px;
+    height: 24px;
+    background-image: radial-gradient(12px 12px at center center, #ffdda1 20%, rgba(146, 94, 5, 0.5058823529) 100%);
+  }
+  .hp_02_map_con .isOpacity {
+    opacity: 1;
+  }
   .hp_02_map_con .open {
     width: 240px;
-    height: 400px;
+    height: 420px;
     border-radius: 10px;
+    background-image: radial-gradient(120px 200px at center center, #ffdda1 0%, #ffdda1 100%);
   }
   .hp_02_map_con #panama {
     left: 27.5%;
