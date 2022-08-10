@@ -388,6 +388,11 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.mb_full_desk_80 {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 .container {
   width: 80%;
   max-width: 1440px;
@@ -405,4 +410,12 @@ body {
   height: 1px;
   overflow: hidden;
   position: absolute;
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1024px) {
+  .mb_full_desk_80 {
+    width: 90%;
+    max-width: 1440px;
+  }
 }

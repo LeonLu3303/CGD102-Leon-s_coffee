@@ -15,7 +15,6 @@
   display: flex;
   align-items: center;
 }
-
 .hp_01_content {
   h2 {
     padding: 40px 0;
@@ -52,7 +51,7 @@
   position: relative;
   z-index: 3;
   background-color: #322a28;
-  padding: 80px 0px 40px 0;
+  padding: 80px 0 0 0;
   .desktop_show {
     display: none;
   }
@@ -119,11 +118,74 @@
 // =========== hp_02 end==========
 // ========= hp_03 start =========
 .homepage_03 {
+  position: relative;
+  z-index: 3;
+  background-color: #322a28;
   width: 100%;
+  margin-top: -5px;
   h2 {
+    width: 80%;
     text-align: center;
     font-size: 36px;
     letter-spacing: 4px;
+    margin: 0 auto 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  h2:before {
+    content: '';
+    height: 2px;
+    width: 80px;
+    background-color: #d8c2a7;
+  }
+  h2:after {
+    content: '';
+    height: 2px;
+    width: 80px;
+    background-color: #d8c2a7;
+  }
+  .hp_03_menu_mb:nth-child(5) {
+    border-bottom: none;
+  }
+  .hp_03_menu_mb {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #d8c2a7;
+
+    .menu_item {
+      img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+      }
+      .qwe {
+        object-position: left center;
+      }
+      text-align: center;
+      h3 {
+        height: 100%;
+        line-height: 160px;
+      }
+    }
+  }
+
+  .right_style {
+    .left {
+      width: 60%;
+    }
+    .right {
+      width: 40%;
+    }
+  }
+  .left_style {
+    .left {
+      width: 40%;
+    }
+    .right {
+      width: 60%;
+    }
   }
 }
 // =========== hp_03 end==========
@@ -243,6 +305,7 @@
     display: none;
   }
   .homepage_02 {
+    padding: 80px 0;
     .desktop_show {
       display: block;
     }
