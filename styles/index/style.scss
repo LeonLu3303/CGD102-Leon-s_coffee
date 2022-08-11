@@ -145,47 +145,86 @@
     width: 80px;
     background-color: #d8c2a7;
   }
-  .hp_03_menu_mb:nth-child(5) {
-    border-bottom: none;
-  }
+  // ==== hp_03_mb ====
   .hp_03_menu_mb {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
+
     .menu_item {
       img {
         width: 100%;
         height: 160px;
         object-fit: cover;
         display: block;
+        transition: all 0.2s 0.5s ease-in-out;
       }
       .qwe {
         object-position: left center;
       }
-      text-align: center;
       h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 100%;
         letter-spacing: 2px;
         font-size: 24px;
-        line-height: 160px;
+        opacity: 1;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+  // 菜單開關畫面
+  .right_style_open,
+  .left_style_open {
+    .menu_item {
+      img {
+        height: 100px;
+        transition: all 0.2s 0.3s ease-in-out;
       }
     }
   }
   .right_style {
     .left {
       width: 60%;
+      transition: all 0.3s 0.7s ease-in-out;
     }
     .right {
       width: 40%;
+      transition: all 0.3s 0.7s ease-in-out;
+    }
+  }
+  .right_style_open {
+    .left {
+      width: 100%;
+      transition: all 0.3s ease-in-out;
+    }
+    .right {
+      width: 0%;
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
     }
   }
   .left_style {
     .left {
       width: 40%;
+      transition: all 0.3s 0.7s ease-in-out;
     }
     .right {
       width: 60%;
+      transition: all 0.3s 0.7s ease-in-out;
+    }
+  }
+  .left_style_open {
+    .left {
+      width: 0%;
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+    }
+    .right {
+      width: 100%;
+      transition: all 0.3s ease-in-out;
     }
   }
   // 拉伸區塊
@@ -193,8 +232,11 @@
     .menu_item_detail {
       background-color: #d8c2a7;
       width: 100%;
-      // height: 1px;
+      height: 1px;
       position: relative;
+      transition: all 0.5s ease-in-out;
+      position: relative;
+      top: 0;
       .item_detail_content {
         text-align: center;
         width: 90%;
@@ -216,15 +258,21 @@
             padding: 10px 0;
             border-top: 1px dashed #322a28;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: center;
             line-height: 20px;
             p {
-              width: 90%;
+              width: 70%;
+              flex-grow: 1;
               color: #322a28;
               font-size: 18px;
               font-weight: 400;
-              padding: 0 15px;
+              padding: 0 5px;
               letter-spacing: 2px;
+            }
+            p + p {
+              width: 20%;
+              flex-grow: 0;
+              padding: 0;
             }
             .detail_pic {
               width: 10%;
@@ -237,7 +285,7 @@
         }
       }
       .item_detail_swtich {
-        background-color: #d8c2a7;
+        background-color: #ffdda1;
         position: absolute;
         left: 0;
         right: 0;
@@ -246,13 +294,26 @@
         width: 36px;
         border-radius: 50%;
         padding: 2px;
+        transform: rotate(180deg);
+        transition: all 0.3s ease;
         img {
           border-radius: 50%;
           width: 100%;
         }
       }
     }
+    .menu_item_detail_open {
+      height: 460px;
+      transition: all 0.5s 0.6s ease;
+      .item_detail_swtich {
+        transform: rotate(0deg);
+        background-color: #d8c2a7;
+        transition: all 0.3s ease;
+      }
+    }
   }
+
+  // ==== hp_03_lg ====
 }
 // =========== hp_03 end==========
 
@@ -284,6 +345,19 @@
   }
   // ======== hp_02 end=========
   // ====== map ======
+  .homepage_03 {
+    .hp_03_menu_mb {
+      .menu_item_detail_open {
+        height: 400px;
+        transition: all 0.5s 0.6s ease;
+        .item_detail_swtich {
+          transform: rotate(0deg);
+          background-color: #d8c2a7;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  }
 }
 @media screen and (min-width: 1024px) {
   .homepage_01 {

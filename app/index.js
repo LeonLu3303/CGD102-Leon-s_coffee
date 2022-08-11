@@ -1,4 +1,5 @@
 $(function () {
+  // 地圖pin show
   let conArr = [
     'panama',
     'guatemala',
@@ -41,5 +42,24 @@ $(function () {
     $(`#li_${conArr[i]}`).mouseleave(() => {
       $(`#${conArr[i]}`).removeClass('highlight');
     });
+  }
+
+  // Menu show mb
+  for (let i = 1; i <= 5; i++) {
+    if (i % 2 == 1) {
+      $(`.hp_03_menu_mb:nth-child(${i})`).click(() => {
+        $(`.hp_03_menu_mb:nth-child(${i})`).toggleClass('right_style_open');
+        $(`.hp_03_menu_mb:nth-child(${i}) .menu_item_detail`).toggleClass(
+          'menu_item_detail_open'
+        );
+      });
+    } else if (i % 2 == 0) {
+      $(`.hp_03_menu_mb:nth-child(${i})`).click(() => {
+        $(`.hp_03_menu_mb:nth-child(${i})`).toggleClass('left_style_open');
+        $(`.hp_03_menu_mb:nth-child(${i}) .menu_item_detail`).toggleClass(
+          'menu_item_detail_open'
+        );
+      });
+    }
   }
 });
