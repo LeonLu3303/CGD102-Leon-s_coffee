@@ -129,22 +129,24 @@
   text-align: center;
   font-size: 36px;
   letter-spacing: 4px;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 30px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 .homepage_03 h2:before {
   content: "";
   height: 2px;
-  width: 80px;
+  width: 25%;
   background-color: #d8c2a7;
+  margin-right: 20px;
 }
 .homepage_03 h2:after {
   content: "";
   height: 2px;
-  width: 80px;
+  width: 25%;
   background-color: #d8c2a7;
+  margin-left: 20px;
 }
 .homepage_03 .hp_03_menu_mb {
   width: 100%;
@@ -267,30 +269,28 @@
 .homepage_03 .hp_03_menu_mb .menu_item_detail .item_detail_content ul li .detail_pic img {
   width: 100%;
 }
-.homepage_03 .hp_03_menu_mb .menu_item_detail .item_detail_swtich {
-  background-color: #ffdda1;
+.homepage_03 .hp_03_menu_mb .menu_item_detail .item_detail_switch {
   position: absolute;
+  bottom: 5px;
+  width: 36px;
   left: 0;
   right: 0;
   margin: auto;
-  bottom: 5px;
-  width: 36px;
   border-radius: 50%;
   padding: 2px;
   transform: rotate(180deg);
   transition: all 0.3s ease;
 }
-.homepage_03 .hp_03_menu_mb .menu_item_detail .item_detail_swtich img {
+.homepage_03 .hp_03_menu_mb .menu_item_detail .item_detail_switch img {
   border-radius: 50%;
   width: 100%;
 }
 .homepage_03 .hp_03_menu_mb .menu_item_detail_open {
-  height: 460px;
+  height: 500px;
   transition: all 0.5s 0.6s ease;
 }
-.homepage_03 .hp_03_menu_mb .menu_item_detail_open .item_detail_swtich {
+.homepage_03 .hp_03_menu_mb .menu_item_detail_open .item_detail_switch {
   transform: rotate(0deg);
-  background-color: #d8c2a7;
   transition: all 0.3s ease;
 }
 
@@ -318,7 +318,7 @@
     width: 50%;
   }
   .homepage_03 .hp_03_menu_mb .menu_item_detail_open {
-    height: 400px;
+    height: 360px;
     transition: all 0.5s 0.6s ease;
   }
   .homepage_03 .hp_03_menu_mb .menu_item_detail_open .item_detail_swtich {
@@ -361,6 +361,9 @@
   }
   .hp_02_title h2 {
     font-size: 42px;
+  }
+  .mb_ts {
+    display: none;
   }
 }
 @media screen and (min-width: 1200px) {

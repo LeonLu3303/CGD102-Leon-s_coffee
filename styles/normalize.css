@@ -411,11 +411,22 @@ body {
   overflow: hidden;
   position: absolute;
 }
+.tw_dt {
+  display: none;
+}
 @media screen and (min-width: 768px) {
 }
 @media screen and (min-width: 1024px) {
   .mb_full_desk_80 {
     width: 90%;
+  }
+  .tw_dt {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mb_full_desk_80 {
+    width: 80%;
     max-width: 1440px;
   }
 }
