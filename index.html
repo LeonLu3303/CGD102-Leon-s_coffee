@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/nav_bar/nav_bar.css" />
     <link rel="stylesheet" href="./styles/index/style.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
     <!-- css style -->
     <script src="./app/jquery-3.6.0.min.js"></script>
     <script src="./app/nav_app.js"></script>
@@ -1171,7 +1172,163 @@
           </div>
         </div>
       </section>
+      <section class="t_col_up">
+        <h2>Barista</h2>
+        <div class="app">
+          <div class="cardList">
+            <button
+              class="cardList__btn btn btn--left"
+              style="opacity: 1; pointer-events: all"
+            >
+              <div class="icon">
+                <svg>
+                  <use xlink:href="#arrow-left"></use>
+                </svg>
+              </div>
+            </button>
+
+            <!-- 圖片 -->
+            <div class="cards__wrapper">
+              <div
+                class="card current--card"
+                style="
+                  --card-translateY-offset: 0%;
+                  --current-card-rotation-offset: 0;
+                "
+              >
+                <div class="card__image">
+                  <img src="./sourse/about/barsita-01.png" />
+                </div>
+              </div>
+
+              <div class="card next--card" style="--card-translateY-offset: 0%">
+                <div class="card__image">
+                  <img src="./sourse/about/barsita-21.png" />
+                </div>
+              </div>
+
+              <div
+                class="card previous--card"
+                style="--card-translateY-offset: 0%"
+              >
+                <div class="card__image">
+                  <img src="./sourse/about/barsita-11.png" />
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="cardList__btn btn btn--right"
+              style="opacity: 1; pointer-events: all"
+            >
+              <div class="icon">
+                <svg>
+                  <use xlink:href="#arrow-right"></use>
+                </svg>
+              </div>
+            </button>
+          </div>
+
+          <!-- 文字區 -->
+
+          <div class="infoList">
+            <div class="info__wrapper">
+              <div
+                class="info current--info"
+                style="transform: translate3d(0px, 0px, 32px)"
+              >
+                <div
+                  class="text name"
+                  style="opacity: 1; transform: translate(0px, 0px)"
+                >
+                  Alexandra
+                </div>
+                <div
+                  class="text location"
+                  style="opacity: 1; transform: translate(0px, 0px)"
+                >
+                  World Brewers Cup Champion
+                </div>
+                <p
+                  class="text description"
+                  style="opacity: 1; transform: translate(0px, 0px)"
+                >
+                  2017
+                </p>
+              </div>
+              <div class="info next--info">
+                <div class="text name">Lisa</div>
+                <div class="text location">
+                  Taiwan Hand Drip Championship Golden
+                </div>
+                <p class="text description">2020 Taiwan</p>
+              </div>
+              <div class="info previous--info">
+                <div class="text name">Andrew</div>
+                <div class="text location">
+                  Taiwan Barista Championship Sliver
+                </div>
+                <p class="text description">2021 Taiwan</p>
+              </div>
+            </div>
+          </div>
+          <div class="app__bg">
+            <div class="app__bg__image current--image">
+              <img src="./sourse/about/barsita-00.png" />
+            </div>
+            <div class="app__bg__image next--image">
+              <img src="./sourse/about/barsita-20.png" />
+            </div>
+            <div class="app__bg__image previous--image">
+              <img src="./sourse/about/barsita-10.png" />
+            </div>
+          </div>
+        </div>
+        <svg class="icons" style="display: none">
+          <symbol
+            id="arrow-left"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <polyline
+              points="328 112 184 256 328 400"
+              style="
+                fill: none;
+                stroke: #fff;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 48px;
+              "
+            ></polyline>
+          </symbol>
+          <symbol
+            id="arrow-right"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <polyline
+              points="184 112 328 256 184 400"
+              style="
+                fill: none;
+                stroke: #fff;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 48px;
+              "
+            ></polyline>
+          </symbol>
+        </svg>
+
+        <!-- partial -->
+        <script src="./imgloaded.js"></script>
+        <script src="./gsap_min.js"></script>
+        <script src="./gsap_script.js"></script>
+      </section>
+      <section class="home"></section>
     </main>
     <footer></footer>
   </body>
+  <script src="./app/imgloaded.js"></script>
+  <script src="./app/gsap_min.js"></script>
+  <script src="./app/gsap_script.js"></script>
 </html>
