@@ -365,6 +365,425 @@
   .mb_ts {
     display: none;
   }
+  .homepage_03 {
+    width: 100%;
+  }
+  .homepage_03 h2 {
+    font-size: 48px;
+    margin-bottom: 80px;
+  }
+  .homepage_03 .hp_03_menu_dt_row {
+    display: flex;
+    width: 100%;
+    height: 850px;
+    overflow: hidden;
+    justify-content: space-between;
+    position: relative;
+  }
+  .homepage_03 .hp_03_menu_dt_row .menu_dt_item_container {
+    cursor: pointer;
+    display: flex;
+    width: 18%;
+    position: absolute;
+    z-index: 10;
+    transition: width 0.3s 0.6s ease-in-out;
+    overflow: hidden;
+  }
+  .homepage_03 .hp_03_menu_dt_row .menu_dt_item_container .dt_item_pic {
+    width: 100%;
+    height: 800px;
+    transition: width 0.3s ease-in-out;
+  }
+  .homepage_03 .hp_03_menu_dt_row .menu_dt_item_container .dt_item_pic img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center center;
+       object-position: center center;
+  }
+  .homepage_03 .hp_03_menu_dt_row .menu_dt_item_container .dt_item_content_container {
+    width: 0%;
+    height: 800px;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .homepage_03 .hp_03_menu_dt_row .menu_dt_item_container .dt_item_content_container .dt_item_content {
+    padding: 0 50px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .homepage_03 .hp_03_menu_dt_row .menu_dt_item_container .dt_item_content_container .dt_item_content .dt_title {
+    font-size: 36px;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #d8c2a7;
+    letter-spacing: 2px;
+  }
+  .homepage_03 .hp_03_menu_dt_row .menu_dt_item_container .dt_item_content_container .dt_item_content ul {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .homepage_03 .hp_03_menu_dt_row .menu_dt_item_container .dt_item_content_container .dt_item_content ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .homepage_03 .hp_03_menu_dt_row .menu_dt_item_container .dt_item_content_container .dt_item_content ul li .detail_pic {
+    width: 10%;
+  }
+  .homepage_03 .hp_03_menu_dt_row .menu_dt_item_container .dt_item_content_container .dt_item_content ul li .detail_pic img {
+    width: 100%;
+    max-width: 50px;
+  }
+  .homepage_03 .hp_03_menu_dt_row .menu_dt_item_container .dt_item_content_container .dt_item_content ul li .detail_content {
+    width: 90%;
+    flex-grow: 1;
+    letter-spacing: 2px;
+  }
+  .homepage_03 .hp_03_menu_dt_row .menu_dt_item_container .dt_item_content_container .dt_item_content ul li .detail_content p {
+    text-align: center;
+    font-size: 24px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+  }
+  .homepage_03 .hp_03_menu_dt_row .menu_dt_item_container .dt_item_content_container .dt_item_content ul li .detail_content p + p {
+    font-size: 20px;
+    text-align: end;
+    border-bottom: 1px dashed #ffdda1;
+  }
+  .homepage_03 .hp_03_menu_dt_row .dt_left_side {
+    width: 100%;
+    transition: width 0.3s 0.7s ease-in-out;
+  }
+  .homepage_03 .hp_03_menu_dt_row .dt_left_side .dt_pic_show {
+    width: 40%;
+    transition: all 0.3s 0.6s ease-in-out;
+  }
+  .homepage_03 .hp_03_menu_dt_row .dt_left_side .dt_content_show {
+    opacity: 1;
+    width: 60%;
+    transition: all 0.3s 0.6s ease-in-out;
+  }
+  .homepage_03 .hp_03_menu_dt_row .p_01 {
+    left: 0;
+    top: 0%;
+    opacity: 1;
+    transition: top 0.3s 0.6s ease-in-out, left 0.3s 0.3s ease-in-out;
+  }
+  .homepage_03 .hp_03_menu_dt_row .p_02 {
+    top: 0%;
+    left: 20%;
+    opacity: 1;
+    transition: top 0.3s 0.6s ease-in-out, left 0.3s 0.3s ease-in-out;
+  }
+  .homepage_03 .hp_03_menu_dt_row .p_03 {
+    top: 0%;
+    left: 40%;
+    opacity: 1;
+    transition: top 0.3s 0.6s ease-in-out, left 0.3s 0.3s ease-in-out;
+  }
+  .homepage_03 .hp_03_menu_dt_row .p_04 {
+    top: 0%;
+    left: 60%;
+    opacity: 1;
+    transition: top 0.3s 0.6s ease-in-out, left 0.3s 0.3s ease-in-out;
+  }
+  .homepage_03 .hp_03_menu_dt_row .p_05 {
+    opacity: 1;
+    top: 0;
+    left: 80%;
+    transition: top 0.3s 0.6s ease-in-out, left 0.3s 0.3s ease-in-out;
+  }
+  .homepage_03 .hp_03_menu_dt_row .p_01::before {
+    opacity: 1;
+    content: "Espresso";
+    position: absolute;
+    letter-spacing: 2px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
+    line-height: 300px;
+    text-align: center;
+    color: #ffdda1;
+    font-size: 36px;
+    font-weight: 600;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3764705882);
+    background-color: rgba(50, 42, 40, 0.2901960784);
+    transition: opacity 0.2s 1.2s ease;
+  }
+  .homepage_03 .hp_03_menu_dt_row .p_02::before {
+    opacity: 1;
+    content: "Coffee";
+    position: absolute;
+    letter-spacing: 2px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 300px;
+    text-align: center;
+    color: #ffdda1;
+    font-size: 36px;
+    font-weight: 600;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3764705882);
+    background-color: rgba(50, 42, 40, 0.2901960784);
+    transition: opacity 0.2s 1.2s ease;
+  }
+  .homepage_03 .hp_03_menu_dt_row .p_03::before {
+    opacity: 1;
+    content: "Drink";
+    letter-spacing: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 300px;
+    text-align: center;
+    color: #ffdda1;
+    font-size: 36px;
+    font-weight: 600;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3764705882);
+    background-color: rgba(50, 42, 40, 0.2901960784);
+    transition: opacity 0.2s 1.2s ease;
+  }
+  .homepage_03 .hp_03_menu_dt_row .p_04::before {
+    opacity: 1;
+    content: "Dessert";
+    letter-spacing: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 300px;
+    text-align: center;
+    color: #ffdda1;
+    font-size: 36px;
+    font-weight: 600;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3764705882);
+    background-color: rgba(50, 42, 40, 0.2901960784);
+    transition: opacity 0.2s 1.2s ease;
+  }
+  .homepage_03 .hp_03_menu_dt_row .p_05::before {
+    opacity: 1;
+    content: "LightMeal";
+    letter-spacing: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 300px;
+    text-align: center;
+    color: #ffdda1;
+    font-size: 36px;
+    font-weight: 600;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3764705882);
+    background-color: rgba(50, 42, 40, 0.2901960784);
+    transition: opacity 0.2s 1.2s ease;
+  }
+  .homepage_03 .hp_03_menu_dt_row .p_01::after,
+.homepage_03 .hp_03_menu_dt_row .p_03::after,
+.homepage_03 .hp_03_menu_dt_row .p_05::after {
+    content: "";
+    position: absolute;
+    bottom: -300px;
+    left: -50px;
+    transform: rotate(18deg);
+    width: 140%;
+    height: 320px;
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.45) 30%, rgba(255, 255, 255, 0.8) 80%, rgba(255, 255, 255, 0) 100%);
+    transition: bottom 0.6s ease-in-out;
+  }
+  .homepage_03 .hp_03_menu_dt_row .p_02::after,
+.homepage_03 .hp_03_menu_dt_row .p_04::after {
+    content: "";
+    position: absolute;
+    bottom: 780px;
+    left: -50px;
+    transform: rotate(18deg);
+    width: 140%;
+    height: 320px;
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 20%, rgba(255, 255, 255, 0.45) 70%, rgba(255, 255, 255, 0) 100%);
+    transition: bottom 0.6s ease-in-out;
+  }
+  .homepage_03 .p_01_show .p_02,
+.homepage_03 .p_01_show .p_04 {
+    opacity: 0;
+    top: -100%;
+    transition: all 0.3s ease-in-out;
+  }
+  .homepage_03 .p_01_show .p_03,
+.homepage_03 .p_01_show .p_05 {
+    opacity: 0;
+    top: 110%;
+    transition: all 0.3s ease-in-out;
+  }
+  .homepage_03 .p_01_show .p_01::before,
+.homepage_03 .p_01_show .p_02::before,
+.homepage_03 .p_01_show .p_03::before,
+.homepage_03 .p_01_show .p_04::before,
+.homepage_03 .p_01_show .p_05::before {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  .homepage_03 .p_01_show .p_01::after,
+.homepage_03 .p_01_show .p_02::after,
+.homepage_03 .p_01_show .p_03::after,
+.homepage_03 .p_01_show .p_04::after,
+.homepage_03 .p_01_show .p_05::after {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  .homepage_03 .p_02_show .p_02 {
+    left: 0;
+    transition: left 0.2s ease-in;
+  }
+  .homepage_03 .p_02_show .p_04 {
+    opacity: 0;
+    top: -100%;
+    transition: all 0.3s ease-in-out;
+  }
+  .homepage_03 .p_02_show .p_01,
+.homepage_03 .p_02_show .p_03,
+.homepage_03 .p_02_show .p_05 {
+    opacity: 0;
+    top: 110%;
+    transition: all 0.3s ease-in-out;
+  }
+  .homepage_03 .p_02_show .p_01::before,
+.homepage_03 .p_02_show .p_02::before,
+.homepage_03 .p_02_show .p_03::before,
+.homepage_03 .p_02_show .p_04::before,
+.homepage_03 .p_02_show .p_05::before {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  .homepage_03 .p_02_show .p_01::after,
+.homepage_03 .p_02_show .p_02::after,
+.homepage_03 .p_02_show .p_03::after,
+.homepage_03 .p_02_show .p_04::after,
+.homepage_03 .p_02_show .p_05::after {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  .homepage_03 .p_03_show .p_01::before,
+.homepage_03 .p_03_show .p_02::before,
+.homepage_03 .p_03_show .p_03::before,
+.homepage_03 .p_03_show .p_04::before,
+.homepage_03 .p_03_show .p_05::before {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  .homepage_03 .p_03_show .p_03 {
+    left: 0;
+    transition: left 0.2s ease-in;
+  }
+  .homepage_03 .p_03_show .p_02,
+.homepage_03 .p_03_show .p_04 {
+    opacity: 0;
+    top: -100%;
+    transition: all 0.3s ease-in-out;
+  }
+  .homepage_03 .p_03_show .p_01,
+.homepage_03 .p_03_show .p_05 {
+    opacity: 0;
+    top: 110%;
+    transition: all 0.3s ease-in-out;
+  }
+  .homepage_03 .p_03_show .p_01::after,
+.homepage_03 .p_03_show .p_02::after,
+.homepage_03 .p_03_show .p_03::after,
+.homepage_03 .p_03_show .p_04::after,
+.homepage_03 .p_03_show .p_05::after {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  .homepage_03 .p_04_show .p_01::before,
+.homepage_03 .p_04_show .p_02::before,
+.homepage_03 .p_04_show .p_03::before,
+.homepage_03 .p_04_show .p_04::before,
+.homepage_03 .p_04_show .p_05::before {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  .homepage_03 .p_04_show .p_04 {
+    left: 0;
+    transition: left 0.2s ease-in;
+  }
+  .homepage_03 .p_04_show .p_02 {
+    opacity: 0;
+    top: -100%;
+    transition: all 0.3s ease-in-out;
+  }
+  .homepage_03 .p_04_show .p_01,
+.homepage_03 .p_04_show .p_03,
+.homepage_03 .p_04_show .p_05 {
+    opacity: 0;
+    top: 110%;
+    transition: all 0.3s ease-in-out;
+  }
+  .homepage_03 .p_04_show .p_01::after,
+.homepage_03 .p_04_show .p_02::after,
+.homepage_03 .p_04_show .p_03::after,
+.homepage_03 .p_04_show .p_04::after,
+.homepage_03 .p_04_show .p_05::after {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  .homepage_03 .p_05_show .p_01::before,
+.homepage_03 .p_05_show .p_02::before,
+.homepage_03 .p_05_show .p_03::before,
+.homepage_03 .p_05_show .p_04::before,
+.homepage_03 .p_05_show .p_05::before {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  .homepage_03 .p_05_show .p_05 {
+    left: 0;
+    transition: left 0.2s ease-in;
+  }
+  .homepage_03 .p_05_show .p_02,
+.homepage_03 .p_05_show .p_04 {
+    opacity: 0;
+    top: -100%;
+    transition: all 0.3s ease-in-out;
+  }
+  .homepage_03 .p_05_show .p_01,
+.homepage_03 .p_05_show .p_03 {
+    opacity: 0;
+    top: 110%;
+    transition: all 0.3s ease-in-out;
+  }
+  .homepage_03 .p_05_show .p_01::after,
+.homepage_03 .p_05_show .p_02::after,
+.homepage_03 .p_05_show .p_03::after,
+.homepage_03 .p_05_show .p_04::after,
+.homepage_03 .p_05_show .p_05::after {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  .homepage_03 .hp_03_menu_dt_row .p_01:hover::after,
+.homepage_03 .hp_03_menu_dt_row .p_03:hover::after,
+.homepage_03 .hp_03_menu_dt_row .p_05:hover::after {
+    bottom: 890px;
+    transition: bottom 0.6s ease-in-out;
+  }
+  .homepage_03 .hp_03_menu_dt_row .p_02:hover::after,
+.homepage_03 .hp_03_menu_dt_row .p_04:hover::after {
+    bottom: -400px;
+    transition: bottom 0.6s ease-in-out;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hp_01_content h2 {

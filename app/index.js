@@ -62,4 +62,12 @@ $(function () {
       });
     }
   }
+
+  // Menu show tb_dt
+  for (let i = 1; i <= 5; i++) {
+    $(`.p_0${i}`).click(() => {
+      $('.hp_03_menu_dt_row').toggleClass(`p_0${i}_show`);
+      $(`.p_0${i}`).toggleClass(`dt_left_side`);
+    });
+  }
 });
