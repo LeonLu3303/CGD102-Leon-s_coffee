@@ -8,7 +8,6 @@
 .t_col_up {
   width: 100%;
   height: 100vh;
-  max-height: 900px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,7 +23,7 @@
   width: 100%;
   top: 60px;
   margin: auto;
-  font-size: 48px;
+  font-size: 32px;
   color: #d8c2a7;
   letter-spacing: 3px;
 }
@@ -101,7 +100,7 @@ button:focus {
 
 .cardList {
   position: absolute;
-  width: calc(3 * var(--card-width));
+  width: 350px;
   height: auto;
 }
 .cardList__btn {
@@ -215,7 +214,7 @@ button:focus {
 
 .info {
   margin-bottom: calc(var(--card-height) / 8);
-  margin-left: calc(var(--card-width) / 1.5);
+  margin-left: calc(var(--card-width) / 1.2);
   transform: translateZ(2rem);
   transition: transform var(--card-transition-duration)
     var(--card-transition-easing);
@@ -234,7 +233,7 @@ button:focus {
 }
 .info .location {
   --mg-left: 40px;
-  --text-size-offset: 0.12;
+  --text-size-offset: 0.065;
   font-weight: 600;
   margin-left: var(--mg-left);
   margin-bottom: calc(var(--mg-left) / 2);
@@ -259,7 +258,7 @@ button:focus {
   height: 2px;
 }
 .info .description {
-  --text-size-offset: 0.065;
+  --text-size-offset: 0.035;
   font-weight: 500;
 }
 .info.current--info {
@@ -268,13 +267,67 @@ button:focus {
 }
 .info.previous--info,
 .info.next--info {
-  opacity: 1;
+  opacity: 0;
   display: none;
+}
+.loading__wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  z-index: 200;
+}
+.loading__wrapper .loader--text {
+  color: #fff;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  margin-bottom: 1.4rem;
+}
+.loading__wrapper .loader {
+  position: relative;
+  width: 200px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.25);
+}
+.loading__wrapper .loader span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: red;
+  transform: scaleX(0);
+  transform-origin: left;
 }
 
 @media only screen and (min-width: 800px) {
   :root {
     --card-width: 250px;
     --card-height: 400px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .cardList {
+    width: calc(3 * var(--card-width));
+  }
+  .info .location {
+    --text-size-offset: 0.12;
+  }
+  .info .description {
+    --text-size-offset: 0.065;
+    font-weight: 500;
+  }
+  .info {
+    margin-bottom: calc(var(--card-height) / 8);
+    margin-left: calc(var(--card-width) / 1.5);
+    transform: translateZ(2rem);
+    transition: transform var(--card-transition-duration)
+      var(--card-transition-easing);
   }
 }
