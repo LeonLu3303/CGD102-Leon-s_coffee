@@ -70,4 +70,30 @@ $(function () {
       $(`.p_0${i}`).toggleClass(`dt_left_side`);
     });
   }
+
+  // scroll animation
+
+  // hp_03
+  window.addEventListener('scroll', () => {
+    for (let i = 1; i <= 5; i++) {
+      if (document.documentElement.scrollTop > 1600) {
+        $(`.p_0${i}`).addClass(`p_scroll_done`);
+      } else {
+        $(`.p_0${i}`).removeClass(`p_scroll_done`);
+      }
+    }
+  });
+  // hp_02
+  window.addEventListener('scroll', () => {
+    if (document.documentElement.scrollTop > 200) {
+      $(`.mb_show_up`).addClass(`block_none`);
+    } else {
+      $(`.mb_show_up`).removeClass(`block_none`);
+    }
+    if (document.documentElement.scrollTop > 400) {
+      $(`.desktop_show`).addClass(`block_none`);
+    } else {
+      $(`.desktop_show`).removeClass(`block_none`);
+    }
+  });
 });

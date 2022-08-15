@@ -4,14 +4,14 @@
   z-index: -1;
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: 0.7;
-  max-height: 800px;
+  opacity: 0.9;
+  max-height: 900px;
 }
 
 .homepage_01 {
   position: relative;
   z-index: 3;
-  height: 85vh;
+  height: 95vh;
   display: flex;
   align-items: center;
 }
@@ -67,6 +67,14 @@
   z-index: 3;
   background-color: #322a28;
   padding: 80px 0 0 0;
+}
+.homepage_02 .mb_show_up {
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+.homepage_02 .block_none {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
 }
 .homepage_02 .desktop_show {
   display: none;
@@ -499,7 +507,6 @@
     display: flex;
     width: 100%;
     height: 850px;
-    overflow: hidden;
     justify-content: space-between;
     position: relative;
   }
@@ -515,7 +522,7 @@
   .homepage_03 .hp_03_menu_dt_row .menu_dt_item_container .dt_item_pic {
     width: 100%;
     height: 800px;
-    transition: width 0.3s ease-in-out;
+    transition: width 0.3s 0.1s ease-in-out;
   }
   .homepage_03 .hp_03_menu_dt_row .menu_dt_item_container .dt_item_pic img {
     width: 100%;
@@ -596,33 +603,38 @@
   }
   .homepage_03 .hp_03_menu_dt_row .p_01 {
     left: 0;
-    top: 0%;
-    opacity: 1;
+    top: -100%;
+    opacity: 0;
     transition: top 0.3s 0.6s ease-in-out, left 0.3s 0.3s ease-in-out;
   }
   .homepage_03 .hp_03_menu_dt_row .p_02 {
-    top: 0%;
+    top: 100%;
     left: 20%;
-    opacity: 1;
+    opacity: 0;
     transition: top 0.3s 0.6s ease-in-out, left 0.3s 0.3s ease-in-out;
   }
   .homepage_03 .hp_03_menu_dt_row .p_03 {
-    top: 0%;
+    top: -100%;
     left: 40%;
-    opacity: 1;
+    opacity: 0;
     transition: top 0.3s 0.6s ease-in-out, left 0.3s 0.3s ease-in-out;
   }
   .homepage_03 .hp_03_menu_dt_row .p_04 {
-    top: 0%;
+    top: 100%;
     left: 60%;
-    opacity: 1;
+    opacity: 0;
     transition: top 0.3s 0.6s ease-in-out, left 0.3s 0.3s ease-in-out;
   }
   .homepage_03 .hp_03_menu_dt_row .p_05 {
-    opacity: 1;
-    top: 0;
+    opacity: 0;
+    top: -100%;
     left: 80%;
     transition: top 0.3s 0.6s ease-in-out, left 0.3s 0.3s ease-in-out;
+  }
+  .homepage_03 .hp_03_menu_dt_row .p_scroll_done {
+    top: 0;
+    opacity: 1;
+    transition: opacity 1s 0.2s ease-in-out, top 1s ease-in-out;
   }
   .homepage_03 .hp_03_menu_dt_row .p_01::before {
     opacity: 1;
@@ -946,6 +958,12 @@
   }
   .homepage_02 .desktop_show {
     display: block;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  .homepage_02 .block_none {
+    opacity: 1 !important;
+    transition: 0.5s ease-in-out !important;
   }
   .flex {
     display: flex;
