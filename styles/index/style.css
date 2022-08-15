@@ -4,8 +4,9 @@
   z-index: -1;
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: 0.9;
+  opacity: 0.8;
   max-height: 900px;
+  max-width: 1920px;
 }
 
 .homepage_01 {
@@ -497,6 +498,7 @@
     display: none;
   }
   .homepage_03 {
+    overflow: hidden;
     width: 100%;
   }
   .homepage_03 h2 {

@@ -3,8 +3,9 @@
   position: fixed;
   z-index: -1;
   object-fit: cover;
-  opacity: 0.9;
+  opacity: 0.8;
   max-height: 900px;
+  max-width: 1920px;
 }
 
 // ======== hp_01 start=========
@@ -544,6 +545,7 @@
     display: none;
   }
   .homepage_03 {
+    overflow: hidden;
     width: 100%;
     h2 {
       font-size: 48px;
