@@ -4,6 +4,7 @@ nav {
 }
 .nav_container {
   position: relative;
+  height: 40px;
 }
 
 .nav_logo_whole {
@@ -17,14 +18,17 @@ nav {
 .hb_show_btn {
   position: fixed;
   right: 40px;
+  top: 40px;
   height: 28px;
   width: 32px;
   opacity: 0;
   z-index: 1000;
 }
 .hb {
-  position: fixed;
+  top: 40px;
   right: 40px;
+  position: fixed;
+
   height: 10px;
   display: flex;
   flex-direction: column;
@@ -305,13 +309,18 @@ nav {
   }
 }
 @media screen and (min-width: 768px) {
+  .nav_container {
+    height: 120px;
+  }
   .nav_logo_whole {
     width: 240px;
   }
   .hb_show_btn {
+    top: 60px;
     right: 60px;
   }
   .hb {
+    top: 60px;
     right: 60px;
   }
   .nav_menu {
@@ -361,8 +370,17 @@ nav {
   }
 }
 @media screen and (min-width: 1024px) {
+  .hb_show_btn {
+    top: 80px;
+  }
+
+  .nav_container {
+    position: relative;
+    height: 80px;
+  }
   .hb {
     height: 12px;
+    top: 80px;
     .abc {
       width: 32px;
     }
@@ -543,6 +561,9 @@ nav {
   }
 }
 @media screen and (min-width: 1200px) {
+  .nav_container {
+    height: 140px;
+  }
   .hb_show_btn {
     right: 1200px;
   }
