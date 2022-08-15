@@ -1,0 +1,230 @@
+.animation_opening {
+  width: 100%;
+  height: 100vh;
+  background-color: #322a28;
+  position: fixed;
+  top: 0;
+  opacity: 1;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .animation_logo {
+    text-align: center;
+    position: relative;
+    top: -100px;
+    svg {
+      margin: 20px 0;
+      animation: fillIn 1s ease-in-out forwards 2.3s;
+      .thePaths {
+        animation: strokeNone 0.3s ease-in forwards 2.2s;
+      }
+    }
+    svg:nth-child(4) {
+      margin-right: 15px;
+    }
+    svg:nth-child(5) {
+      position: absolute;
+      top: 64px;
+      left: 330px;
+      transform: rotate(-15deg);
+    }
+    svg:nth-child(11) {
+      margin-left: 75px;
+    }
+    svg:nth-child(9) {
+      top: 58px;
+      left: 490px;
+      position: absolute;
+    }
+    svg:nth-child(10) {
+      top: 58px;
+      left: 530px;
+      position: absolute;
+    }
+  }
+  #closeAnimation {
+    font-size: 36px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 200px;
+    background-color: #cab69e;
+    width: 200px;
+    height: 120px;
+    border-radius: 20px;
+    opacity: 0;
+    animation: btnShow 0.3s ease-in forwards 3s;
+    color: #322a28;
+  }
+  #closeAnimation:hover {
+    background-color: #ffdda1;
+  }
+}
+#ani_logo_01 {
+  stroke-dasharray: 908px;
+  stroke-dashoffset: 908px;
+  animation: fadeIn 0.6s ease-in forwards, strokeNone 0.3s ease-in forwards 2.2s;
+}
+#ani_logo_02 {
+  stroke-dasharray: 196px;
+  stroke-dashoffset: 196px;
+  animation: fadeIn 0.6s ease-in forwards 0.2s,
+    strokeNone 0.3s ease-in forwards 2.2s;
+}
+#ani_logo_03 {
+  stroke-dasharray: 207px;
+  stroke-dashoffset: 207px;
+  animation: fadeIn 0.6s ease-in forwards 0.4s,
+    strokeNone 0.3s ease-in forwards 2.2s;
+}
+#ani_logo_04 {
+  stroke-dasharray: 286px;
+  stroke-dashoffset: 286px;
+  animation: fadeIn 0.6s ease-in forwards 0.6s,
+    strokeNone 0.3s ease-in forwards 2.2s;
+}
+#ani_logo_05 {
+  stroke-dasharray: 78px;
+  stroke-dashoffset: 78px;
+  animation: fadeIn 0.6s ease-in forwards 0.8s,
+    strokeNone 0.3s ease-in forwards 2.2s;
+}
+#ani_logo_06 {
+  stroke-dasharray: 181px;
+  stroke-dashoffset: 181px;
+  animation: fadeIn 0.6s ease-in forwards 1s,
+    strokeNone 0.3s ease-in forwards 2.2s;
+}
+#ani_logo_07 {
+  stroke-dasharray: 178px;
+  stroke-dashoffset: 178px;
+  animation: fadeIn 0.6s ease-in forwards 1.2s,
+    strokeNone 0.3s ease-in forwards 2.2s;
+}
+#ani_logo_08 {
+  stroke-dasharray: 207px;
+  stroke-dashoffset: 207px;
+  animation: fadeIn 0.6s ease-in forwards 1.4s,
+    strokeNone 0.3s ease-in forwards 2.2s;
+}
+#ani_logo_09 {
+  stroke-dasharray: 288px;
+  stroke-dashoffset: 288px;
+  animation: fadeIn 0.6s ease-in forwards 1.6s,
+    strokeNone 0.3s ease-in forwards 2.2s;
+}
+#ani_logo_10 {
+  stroke-dasharray: 288px;
+  stroke-dashoffset: 288px;
+  animation: fadeIn 0.6s ease-in forwards 1.8s,
+    strokeNone 0.3s ease-in forwards 2.2s;
+}
+#ani_logo_11 {
+  stroke-dasharray: 196px;
+  stroke-dashoffset: 196px;
+  animation: fadeIn 0.6s ease-in forwards 2s,
+    strokeNone 0.3s ease-in forwards 2.2s;
+}
+#ani_logo_12 {
+  stroke-dasharray: 196px;
+  stroke-dashoffset: 196px;
+  animation: fadeIn 0.6s ease-in forwards 2.2s,
+    strokeNone 0.3s ease-in forwards 2.2s;
+}
+
+// 中文字
+#ani_logo_13 {
+  stroke-dasharray: 381px;
+  stroke-dashoffset: 381px;
+  animation: fadeIn 0.6s ease-in forwards 0.22s,
+    strokeNone 0.3s ease-in forwards 2.2s;
+}
+#ani_logo_14 {
+  stroke-dasharray: 531px;
+  stroke-dashoffset: 531px;
+  animation: fadeIn 0.6s ease-in forwards 0.44s,
+    strokeNone 0.3s ease-in forwards 2.2s;
+}
+#ani_logo_15 {
+  stroke-dasharray: 752px;
+  stroke-dashoffset: 752px;
+  animation: fadeIn 0.6s ease-in forwards 0.66s,
+    strokeNone 0.3s ease-in forwards 2.2s;
+}
+#ani_logo_16 {
+  stroke-dasharray: 605px;
+  stroke-dashoffset: 605px;
+  animation: fadeIn 0.6s ease-in forwards 0.88s,
+    strokeNone 0.3s ease-in forwards 2.2s;
+}
+#ani_logo_17 {
+  stroke-dasharray: 476px;
+  stroke-dashoffset: 476px;
+  animation: fadeIn 0.6s ease-in forwards 1.1s,
+    strokeNone 0.3s ease-in forwards 2.2s;
+}
+#ani_logo_18 {
+  stroke-dasharray: 641px;
+  stroke-dashoffset: 641px;
+  animation: fadeIn 0.6s ease-in forwards 1.3s,
+    strokeNone 0.3s ease-in forwards 2.2s;
+}
+#ani_logo_19 {
+  stroke-dasharray: 442px;
+  stroke-dashoffset: 442px;
+  animation: fadeIn 0.6s ease-in forwards 1.5s,
+    strokeNone 0.3s ease-in forwards 2.2s;
+}
+#ani_logo_20 {
+  stroke-dasharray: 518px;
+  stroke-dashoffset: 528px;
+  animation: fadeIn 0.6s ease-in forwards 1.7s,
+    strokeNone 0.3s ease-in forwards 2.2s;
+}
+#ani_logo_21 {
+  stroke-dasharray: 582px;
+  stroke-dashoffset: 582px;
+  animation: fadeIn 0.6s ease-in forwards 1.9s,
+    strokeNone 0.3s ease-in forwards 2.2s;
+}
+#ani_logo_22 {
+  stroke-dasharray: 612px;
+  stroke-dashoffset: 612px;
+  animation: fadeIn 0.6s ease-in forwards 2.2s,
+    strokeNone 0.3s ease-in forwards 2.2s;
+}
+.animation_over {
+  transition: all 1s ease 0s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes fadeIn {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+@keyframes fillIn {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #cab69e;
+  }
+}
+@keyframes strokeNone {
+  from {
+    stroke: #cab69e;
+  }
+  to {
+    stroke: #322a28;
+  }
+}
+@keyframes btnShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

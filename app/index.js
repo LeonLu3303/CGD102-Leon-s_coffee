@@ -1,4 +1,10 @@
 $(function () {
+  // 過場動畫
+  $(`#closeAnimation`).click((e) => {
+    $('.animation_opening').addClass('animation_over');
+    e.preventDefault();
+  });
+
   // 地圖pin show
   let conArr = [
     'panama',
