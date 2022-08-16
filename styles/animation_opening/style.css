@@ -282,4 +282,48 @@
   to {
     opacity: 1;
   }
+}
+@media screen and (max-width: 765px) {
+  .animation_opening .animation_logo {
+    text-align: center;
+    position: relative;
+    top: -100px;
+  }
+  .animation_opening .animation_logo svg {
+    margin: 20px 0;
+    -webkit-animation: fillIn 1s ease-in-out forwards 2.3s;
+            animation: fillIn 1s ease-in-out forwards 2.3s;
+  }
+  .animation_opening .animation_logo svg .thePaths {
+    -webkit-animation: strokeNone 0.3s ease-in forwards 2.2s;
+            animation: strokeNone 0.3s ease-in forwards 2.2s;
+  }
+  .animation_opening .animation_logo svg:nth-child(4) {
+    margin-right: 15px;
+  }
+  .animation_opening .animation_logo svg:nth-child(5) {
+    position: absolute;
+    top: 64px;
+    left: 280px;
+    transform: rotate(-15deg);
+  }
+  .animation_opening .animation_logo svg:nth-child(7) {
+    width: 60px;
+  }
+  .animation_opening .animation_logo svg:nth-child(11) {
+    margin-left: 75px;
+  }
+  .animation_opening .animation_logo svg:nth-child(9) {
+    top: 145px;
+    left: 160px;
+    position: absolute;
+  }
+  .animation_opening .animation_logo svg:nth-child(10) {
+    top: 145px;
+    left: 200px;
+    position: absolute;
+  }
+  .animation_opening #closeAnimation {
+    bottom: 50px;
+  }
 }/*# sourceMappingURL=style.css.map */
