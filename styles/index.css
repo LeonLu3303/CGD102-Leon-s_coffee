@@ -235,7 +235,6 @@ button:focus {
   --mg-left: 40px;
   --text-size-offset: 0.065;
   font-weight: 600;
-  margin-left: var(--mg-left);
   margin-bottom: calc(var(--mg-left) / 2);
   padding-bottom: 0.8rem;
 }
@@ -244,14 +243,14 @@ button:focus {
   content: '';
   position: absolute;
   background: #d8c2a7;
-  left: 0%;
+  left: 40px;
   transform: translate(calc(-1 * var(--mg-left)), -50%);
 }
-.info .location::before {
+/* .info .location::before {
   top: 50%;
   width: 20px;
   height: 5px;
-}
+} */
 .info .location::after {
   bottom: 0;
   width: 60px;

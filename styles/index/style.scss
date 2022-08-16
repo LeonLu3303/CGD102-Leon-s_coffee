@@ -553,7 +553,7 @@
     .hp_03_menu_dt_row {
       display: flex;
       width: 100%;
-      height: 850px;
+      height: 700px;
       justify-content: space-between;
       position: relative;
       .menu_dt_item_container {
@@ -566,7 +566,7 @@
         overflow: hidden;
         .dt_item_pic {
           width: 18%;
-          height: 800px;
+          height: 650px;
           transition: width 0.3s 0.1s ease-in-out;
           img {
             width: 100%;
@@ -577,7 +577,7 @@
         }
         .dt_item_content_container {
           width: 0%;
-          height: 800px;
+          height: 650px;
           overflow: hidden;
           opacity: 0;
           transition: opacity 0.3s ease-in-out;
